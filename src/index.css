@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html {
+      @apply font-Poppins scroll-smooth;
+   }
+
+   section {
+      @apply py-12;
+   }
+
+   body {
+      @apply bg-[#FAFAFA];
+   }
+
+   button {
+      @apply transition-all duration-300 ease-out;
+   }
+}
+
+@layer components {
+   .section-title {
+      @apply text-xl text-orange-400 font-semibold;
+   }
+   .title {
+      @apply text-slate-900 font-semibold text-2xl md:text-4xl mt-2;
+   }
+   .sub-title {
+      @apply text-slate-500 mt-4 leading-relaxed tracking-wide;
+   }
+}
